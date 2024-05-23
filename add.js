@@ -9,6 +9,9 @@
     todos.push({ text: todoInput, completed: false }); // Agrega el nuevo TODO
     localStorage.setItem('todos', JSON.stringify(todos)); // Guarda los TODOs en el local storage
 
-    document.getElementById('message').textContent = 'Tarea guardada :D';
-    document.getElementById('todo-input').value = ''; // Limpio el campo de entrada
+    const mensa= document.getElementById('message')
+    mensa.textContent = 'Tarea guardada :D';
+
+    const campo = document.getElementById('todo-input')
+    campo.value = ''; // Limpio el campo de entrada
 });

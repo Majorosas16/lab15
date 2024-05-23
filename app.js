@@ -12,7 +12,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
             const marcado = document.createElement("button");
             marcado.textContent = todo.completed ? 'Tarea hecha' : 'Tarea sin hacer';
-            marcado.addEventListener('click', function() {
+            
+            marcado.addEventListener('click', function(e) {
                 todos[index].completed = !todos[index].completed;
                 localStorage.setItem('todos', JSON.stringify(todos));
                 loadTodos(); // Recarga la lista de TODOs en el local storage
