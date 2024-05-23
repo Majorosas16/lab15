@@ -10,15 +10,15 @@ document.addEventListener('DOMContentLoaded', function() {
             li.textContent = todo.text;
             li.style.textDecoration = todo.completed ? 'line-through' : 'none';
 
-            const toggleButton = document.createElement('button');
-            toggleButton.textContent = todo.completed ? 'Marcar como por hacer' : 'Marcar como completado';
-            toggleButton.addEventListener('click', function() {
+            const marcado = document.createElement("button");
+            marcado.textContent = todo.completed ? 'Tarea hecha' : 'Tarea sin hacer';
+            marcado.addEventListener('click', function() {
                 todos[index].completed = !todos[index].completed;
                 localStorage.setItem('todos', JSON.stringify(todos));
-                loadTodos(); // Recarga la lista de TODOs
+                loadTodos(); // Recarga la lista de TODOs en el local storage
             });
 
-            li.appendChild(toggleButton);
+            li.appendChild(marcado);
             todoList.appendChild(li);
         });
     }

@@ -19,8 +19,9 @@ body{
     width: 100vw;
 }
 
-.on{
-    color: #14e517;
+#message {
+    margin-top: 10px;
+    color: #37d772;
 }
 
 .btn{
@@ -30,7 +31,7 @@ body{
     width: 100px;
     height: 30px;
     border-radius: 1rem;
-
+    cursor: pointer;
 }
 
 .a{
@@ -38,19 +39,29 @@ body{
     color: white;
 }
 
-.check{
-    appearance: none;
-    width: 7%;
-    height: 100%;
-    border-radius: 50%;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+.btn2{
+    background-color: rgb(4, 73, 113);
+    color: white;
+    border: none;
+    width: 150px;
+    height: 40px;
+    border-radius: 1rem;
+    cursor: pointer;
 }
-.check:checked{
-    background-color: #37d772;
-    background-image: url(https://github.com/Majorosas16/Lab7/blob/master/img/chulo.png?raw=true);
-    background-size: 10px;
-    background-repeat: no-repeat;
-    background-position: center;
+
+form {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 80%;
+    margin: 1rem 0;
+}
+
+#todo-input {
+    padding: 10px;
+    margin-bottom: 2rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
 }
 
 #contenedortxt{
@@ -67,156 +78,26 @@ body{
     justify-content: center;
     flex-direction: column;
     gap: 2rem;
-width: 30%;
-height: 90%;
+width: 25%;
+height: 50%;
 background-color: var(--contenedor);
 box-shadow: rgba(0, 0, 0, 0.111) 0px 5px 15px;
 border-radius: 4rem;
 }
 
-#contenedor1{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: var(--contenedor);
-    width: 400px;
-    margin: 0.5rem 1rem;
-    padding: 15px 30px;
-    border-radius: 25px;
-    box-shadow: rgba(0, 0, 0, 0.191) 0px 5px 15px;
-    font-size: 18px;
-    color: var(--letras);
-    transition: 0.5s ease;
+ul#todo-list {
+    list-style: none;
+    padding: 0;
+    width: 100%;
 }
 
-#contenedor2{
+ul#todo-list li {
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: var(--contenedor);
-    width: 400px;
-    margin: 0.5rem 1rem;
-    padding: 15px 30px;
-    border-radius: 25px;
-    box-shadow: rgba(0, 0, 0, 0.191) 0px 5px 15px;
-    font-size: 18px;
-    color: var(--letras);
-    transition: 0.5s ease;
-}
-
-#contenedor3{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: var(--contenedor);
-    width: 400px;
-    margin: 0.5rem 1rem;
-    padding: 15px 30px;
-    border-radius: 25px;
-    box-shadow: rgba(0, 0, 0, 0.191) 0px 5px 15px;
-    font-size: 18px;
-    color: var(--letras);
-    transition: 0.5s ease;
-}
-
-#contenedor4{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: var(--contenedor);
-    width: 400px;
-    margin: 0.5rem 1rem;
-    padding: 15px 30px;
-    border-radius: 25px;
-    box-shadow: rgba(0, 0, 0, 0.191) 0px 5px 15px;
-    font-size: 18px;
-    color: var(--letras);
-    transition: 0.5s ease;
-}
-
-#contenedor5{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: var(--contenedor);
-    width: 400px;
-    margin: 0.5rem 1rem;
-    padding: 15px 30px;
-    border-radius: 25px;
-    box-shadow: rgba(0, 0, 0, 0.191) 0px 5px 15px;
-    font-size: 18px;
-    color: var(--letras);
-    transition: 0.5s ease;
-}
-
-#contenedor6{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: var(--contenedor);
-    width: 400px;
-    margin: 0.5rem 1rem;
-    padding: 15px 30px;
-    border-radius: 25px;
-    box-shadow: rgba(0, 0, 0, 0.191) 0px 5px 15px;
-    font-size: 18px;
-    color: var(--letras);
-    transition: 0.5s ease;
-}
-
-#contenedor7{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: var(--contenedor);
-    width: 400px;
-    margin: 0.5rem 1rem;
-    padding: 15px 30px;
-    border-radius: 25px;
-    box-shadow: rgba(0, 0, 0, 0.191) 0px 5px 15px;
-    font-size: 18px;
-    color: var(--letras);
-    transition: 0.5s ease;
-}
-
-#contenedor8{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: var(--contenedor);
-    width: 400px;
-    margin: 0.5rem 1rem;
-    padding: 15px 30px;
-    border-radius: 25px;
-    box-shadow: rgba(0, 0, 0, 0.191) 0px 5px 15px;
-    font-size: 18px;
-    color: var(--letras);
-    transition: 0.5s ease;
-}
-
-#contenedor9{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: var(--contenedor);
-    width: 400px;
-    margin: 0.5rem 1rem;
-    padding: 15px 30px;
-    border-radius: 25px;
-    box-shadow: rgba(0, 0, 0, 0.191) 0px 5px 15px;
-    font-size: 18px;
-    color: var(--letras);
-    transition: 0.5s ease;
-}
-
-#contenedor10{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: var(--contenedor);
-    width: 400px;
-    margin: 0.5rem 1rem;
-    padding: 15px 30px;
+    margin: 0.5rem 0;
+    padding: 15px;
     border-radius: 25px;
     box-shadow: rgba(0, 0, 0, 0.191) 0px 5px 15px;
     font-size: 18px;
